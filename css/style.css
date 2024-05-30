@@ -1,0 +1,86 @@
+:root {
+  --min-color: #19a1ad;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+.page {
+  background-color: var(--min-color);
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.page .top-img img {
+  position: absolute;
+  left: -300px;
+  top: -300px;
+}
+.page .bottom-img img {
+  position: absolute;
+  right: -300px;
+  bottom: -300px;
+}
+.page .card {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 300px auto;
+  background-color: #ffffff;
+  max-width: fit-content;
+  z-index: 2;
+  border-radius: 10px;
+}
+.page .card .back-img img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+.page .card .avatar img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 88px;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+.page .card h2 {
+  padding-top: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #393747;
+  margin-bottom: -5px;
+}
+.page .card h2 span {
+  font-weight: normal;
+  padding-left: 10px;
+  color: #777;
+}
+.page .card p {
+  color: #777;
+  padding-bottom: 5px;
+}
+.page .card .info ul {
+  display: flex;
+  text-align: center;
+  list-style: none;
+  border-top: 1px solid #dadada;
+}
+.page .card .info ul li { 
+  padding: 30px 42px 10px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+.page .card .info ul li span {
+  display: block;
+  padding-top: 10px;
+  font-weight: normal;
+  font-size: 14px;
+  color: #777;
+  letter-spacing: 1.5px;
+}
